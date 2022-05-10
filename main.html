@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="nav-tabs nav-justified">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <p class="navbar-logo" href="#"></p>
+              <img src="\\107.105.86.239\mpqa\Itrue Files\Jasmine\updated\Jasmine Files\final logo1.png" width="15%" height="15%">
+          </p>
+          </div><ul class= "nav nav-pills nav-justified">
+            <li id="open_item_replacement" href="#">Item Replacement</li>
+            <li role="presentation"><a href="#">Replacement History</a></li>
+            <li role="presentation"><a href="#">Current Stocks</a></li>
+            <li role="presentation"><a href="#">Frequency Replacement</a></li>
+          </ul>
+        </div>
+      </nav>
+</body>
+<script>
+    let itemReplacement = document.getElementById('open_item_replacement');
+    itemReplacement.addEventListener('click', openReplacement);
+
+    function openReplacement() {
+        newWindow = window.open(url="edit_edit.html", target='_blank', "height=80,width=540");
+        newWindow.resizeBy(500, 800);
+    }
+
+        function getEquipmentDetails() {
+            url = "http://107.105.85.175:8021/equipment/T001?format=json"
+            $.ajax({
+                url: url,
+                method: "POST",
+                contentType:'application/json',
+                success: function(data) {
+                    result = data;
+                    // return response; // <- I tried that one as well
+                }
+            })
+            return result; // It always returns `undefined`
+                curElement.parent().find("machineno").html(data.likes);
+
+                    let machineno = prompt("Data");
+                    if (data=='success')
+                    document.getElementById("size").value = "03";
+                }
+</script>
+</html>
+

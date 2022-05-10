@@ -1,0 +1,184 @@
+.header{
+    background-color:rgb(3, 82, 156);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1px;
+    font-size: 13pt;
+    text-align: center;
+    border-collapse: border;
+    height: 18%;
+    width: 100%;
+}
+.itrueparts{
+    background-color: rgb(0, 0, 0);
+    font-size: 13pt;
+    row-gap: 4pt;
+    column-gap: 2pt;
+    background-size: 10pt;
+    height: 18%;
+    width: 100;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    color:white;
+    padding: 1px;
+}
+.table{
+    border-collapse: border;
+}
+
+.image{
+    height: 5%;
+    width: 30%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(253, 167, 6);
+    text-align-last: center;
+    font-size: 8pt;
+    color: white;
+    padding: 1px;
+}
+.text3{
+    
+    height: 50%;
+    width: 20%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(6, 216, 58);
+    text-align-last: center;
+    font-size: 15pt;
+    color: white;
+    font-style: inherit;
+    
+}
+.text4{
+    height: 40%;
+    width: 20%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(37, 154, 201);
+    text-align-last: center;
+    font-size: 15pt;
+    color: white;
+}
+.text5{
+    height: 50%;
+    width: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(223, 235, 62);
+    text-align-last: center;
+    font-size: 12pt;
+    color: white;
+}
+.text6{
+    float: left;
+    font-size: 12pt;
+}
+inputbox{
+    font-size: inherit;
+    background-color: red;
+}
+.space{
+padding: 2%
+
+
+}
+.pic{
+    position: relative;
+    height: 100%;
+    content: '';
+    position: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url(watermark.png) 0 0 repeat;
+    background-position: center;  
+    opacity: 0.1;
+  }
+  .watermarked {
+    position: relative;
+  }
+
+  .navbar-header{
+      height: 18%;
+      width: 18%;
+  }
+  .oval {
+    height: 50px;
+    width: 100px;
+    background-color: #555;
+    border-radius: 50%;
+  }
+  .t1{
+    border: 1.25px solid black;
+    background: rgb(137, 181, 248);
+    color:rgb(0, 0, 0);
+    height: 20%; 
+    width: 200%; 
+    padding: 7px;
+    border-collapse: collapse;
+    row-gap: 3pt;
+    border-style: double;
+    border-radius: 10px;
+    border-spacing: 10px;
+    border-color: white; 
+}
+  
+  
+
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
