@@ -91,9 +91,6 @@
                                             <label for="beforeItemCategory" class="col-sm-3 col-form-label">Item Category</label>
                                             <div class="col-md-6">
                                                 <select name="text" class="form-control" id="beforeItemCategory">
-                                                    <option value></option>
-                                                    <option value>General</option>
-                                                    <option value>camera</option>
                                                 </select>
                                             </div>
                                         </div>    
@@ -118,12 +115,6 @@
                                             <label for="afterItemCategory" class="col-sm-3 col-form-label">Item Category</label>
                                             <div class="col-sm-6">
                                                 <select type="afterItemCategory" class="form-control" id="afterItemCategory">
-                                                    <option value></option>
-                                                    <option value>Camera</option>
-                                                    <option value>Light/LED</option>
-                                                    <option value>LENS</option>
-                                                    <option value>Computer Related</option>
-                                                    <option value>QQ </option>
                                                 </select>
                                             </div>
                                         </div>
@@ -131,9 +122,6 @@
                                             <label for="afterItemName" class="col-sm-3 col-form-label">Item Name</label>
                                             <div class="col-sm-6">
                                                 <select id="afterItemName" type="text" class="form-control" id="afterItemName">
-                                                    <option value></option>
-                                                    <option value>USB3.0</option>
-                                                    <option value>VGA COLOR CAMERA</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -194,125 +182,6 @@
                 </form>
             </center>
         </body>
-         
-    <script>
-     var machineNumberObject = document.getElementById('machineno')
-            machineNumberObject.addEventListener("keypress", function(event) {
-        if (event.key === 'Enter') {
-            var machineNumber = machineNumberObject.value;
-            getEquipmentDetails(machineNumber)
-        }
-    })
-    function getEquipmentDetails(machineNumber) {
-        var url = "http://107.105.85.175:8021/equipment/" + machineNumber + "?format=json"
-        // url = "http://107.105.85.175:8021/equipment/T001?format=json"
-        console.log(url)
-        $.ajax({
-            url: url,
-            method: "GET",
-            contentType:'application/json',
-            success: function(equipmentDetails) {
-                displayEquipmentDetails(equipmentDetails);
-            },
-            error: function(XMLHttpRequest, textStatus, errorThrown) { 
-                 window.alert("Details not found" + errorThrown);
-            }       
-        })
-    }
-    function displayEquipmentDetails(equipmentDetails) {
-        var line = document.getElementById("line");
-        var size = document.getElementById("size");
-        line.value = equipmentDetails.line;
-        size.value = equipmentDetails.size;
-    }
-    var getImageforUpload = function(event, documentImageID) {
-        var image = document.getElementById(documentImageID);
-        image.src = URL.createObjectURL(event.target.files[0]);
-        console.log(image.id)
-    }
-
-    function getItemCategories() {
-        var url = "http://107.107.85.175:8021/api/items/?format=json"
-        console.log("check")
+    <script src="js/replacement_form.js"></script>
    
-        $.ajax({
-            url: url,
-            method: "GET",
-            contentType:'application/json',
-            success: function(itemCategoryList) {
-                displayItemCategories(itemCategoryList);
-            },
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
-                 console.log(textStatus, errorThrown)
-                 window.alert("Details not found" + errorThrown );
-            }       
-        })
-    }
-
-    function displayItemCategories(itemCategoryList) {
-        console.log("check2")
-        var beforeItemCategories = document.getElementById("beforeItemCategory");
-        console.log(itemCategoryList)
-        console.log('bbb')
-
-        
-    }
-
-    getItemCategories()
-//             var itemcategory = {
-//                 General:['usb','lens'],
-//                 camera: ['rccs','third'],
-                
-//             }
-//             let itemcategory = document.getElementById('beforeItemCategory');
-//                 itemcategory.addEventListener('change'(event)).value; {
-//                     let beforeItemCategory = document.getElementById('beforeItemName')
-    
-//                 }
-//                 function displayitemcategoryDetails (beforeItemCategory,beforeItemName){
-//                     var url = "http://107.105.85.175:8021/api/items/" + beforeItemCategory +"?category_name"
-//                     console.log(url)
-//                     fetch(url,{
-//                         method: "GET",
-//                         contentType:'application/json',
-//                         success: function(data) {
-//                         result = data
-//                         }
-//                     })
-//             var beforeitemcategory = document.getElementById('beforeItemCategory');
-//             var beforeItemName = document.getElementById('beforeItemName');
-//             beforeItemCategory.value = itemcategoryDetails.beforeItemCategory;
-//             beforeItemName.value = itemcategoryDetails.beforeItemName;  
-
-//             }
-
-//         //     main.addEventListener('change',function(){
-//         //     var itemcategory = url[this.value];
-
-//         //     while (sub.option.length  > 0) {
-//         //         sub.option.remove (0);
-//         //     }
-//         //     Arrayfrom(selected_option).forEach(function(el){
-//         //     let option = new Option (el, el);
-//         //     sub.appendChild(option);
-//         //     });
-//         // })
-//         </script>
-//          <!-- <script type="text/javascript">
-//             function populate(s1,s2){
-//                 var s1 = document.getElementById(s1);
-//                 var s2 = document.getElementById(s2);
-//                 s2.innerHTML = "";
-//                 if(s1.value == "Camera"){
-//                     var optionArray = ["|","aaa|Aaa","bbb|Bbb"];
-//                 }
-//                 for(var option in optionArray){
-//                     var pair = optionArray[option].split("|");
-//                     var newOption = document.createElement("option");
-//                     newOption.value = pair[0];
-//                     newOption.innerHTML = pair[1];
-//                     s2.option.add(newOption);
-//                 }
-//             }
-//         </script>  -->
 </html>
