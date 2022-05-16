@@ -11,12 +11,12 @@
         <div class="container-fluid">
           <div class="navbar-header">
             <p class="navbar-logo" href="#"></p>
-              <img src="\\107.105.86.239\mpqa\Itrue Files\Jasmine\updated\Jasmine Files\final logo1.png" width="15%" height="15%">
+              <img src="\\107.105.86.239\mpqa\Itrue Files\JASMINE\updated\Jasmine Files\final logo1.png" width="15%" height="15%">
           </p>
           </div><ul class= "nav nav-pills nav-justified">
-            <li id="open_item_replacement" href="#">Item Replacement</li>
+            <li id="open_item_replacement"><a href="#">Item Replacement</li>
             <li role="presentation"><a href="#">Replacement History</a></li>
-            <li role="presentation"><a href="#">Current Stocks</a></li>
+            <li role="open_sample_table_stocks"><a href="#">Current Stocks</a></li>
             <li role="presentation"><a href="#">Frequency Replacement</a></li>
           </ul>
         </div>
@@ -24,31 +24,21 @@
 </body>
 <script>
     let itemReplacement = document.getElementById('open_item_replacement');
-    itemReplacement.addEventListener('click', openReplacement);
+
+    itemReplacement.addEventListener('click', openReplacement, openStocks);
 
     function openReplacement() {
-        newWindow = window.open(url="edit_edit.html", target='_blank', "height=80,width=540");
+        newWindow = window.open(url="replacement_form.html", target='_blank', "height=80,width=540");
         newWindow.resizeBy(500, 800);
     }
+        
+    let sampleStocks = document.getElementById('open_sample_table_stocks');
 
-        function getEquipmentDetails() {
-            url = "http://107.105.85.175:8021/equipment/T001?format=json"
-            $.ajax({
-                url: url,
-                method: "POST",
-                contentType:'application/json',
-                success: function(data) {
-                    result = data;
-                    // return response; // <- I tried that one as well
-                }
-            })
-            return result; // It always returns `undefined`
-                curElement.parent().find("machineno").html(data.likes);
-
-                    let machineno = prompt("Data");
-                    if (data=='success')
-                    document.getElementById("size").value = "03";
-                }
+    function openStocks(){
+        newWindow = window.open(url=" sample table_stocks.html", target='_blank', "height=80,width=540");
+        newWindow.resizeBy(500, 800);
+        console.log(openStocks)
+}
 </script>
 </html>
 

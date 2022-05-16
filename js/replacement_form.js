@@ -1,4 +1,6 @@
+
 // utility functions
+
 function removeOptions(selectElement) {
     var i, L = selectElement.options.length - 1;
     for(i = L; i >= 0; i--) {
@@ -9,7 +11,6 @@ function removeOptions(selectElement) {
 
 
 getItemCategories()
-
 
 var machineNumberObject = document.getElementById('machineno')
        machineNumberObject.addEventListener("keypress", function(event) {
@@ -35,7 +36,7 @@ function getEquipmentDetails(machineNumber) {
            displayEquipmentDetails(equipmentDetails);
        },
        error: function(XMLHttpRequest, textStatus, errorThrown) { 
-            window.alert("Details not found" + errorThrown);
+            window.alert("Details " + errorThrown);
        }       
    })
 }
@@ -115,7 +116,7 @@ function displayItemList(itemList, ItemCategoryID) {
         for (var i=0; i<mdmCodes.length; i++) {
             var option = document.createElement('option');
             option.value = mdmCodes[i]
-            option.innerHTML = shortNames[i]
+            option.innerHTML = shortNames[i]       
             itemReferenced.appendChild(option);
         }
     }
@@ -133,59 +134,3 @@ beforeItemCategory.addEventListener("change", function(){
 afterItemCategory.addEventListener("change", function(){
     getItemsfromCategory(afterItemCategory.value, afterItemCategory.id)
 })
-//             var itemcategory = {
-//                 General:['usb','lens'],
-//                 camera: ['rccs','third'],
-           
-//             }
-//             let itemcategory = document.getElementById('beforeItemCategory');
-//                 itemcategory.addEventListener('change'(event)).value; {
-//                     let beforeItemCategory = document.getElementById('beforeItemName')
-
-//                 }
-//                 function displayitemcategoryDetails (beforeItemCategory,beforeItemName){
-//                     var url = "http://107.105.85.175:8021/api/items/" + beforeItemCategory +"?category_name"
-//                     console.log(url)
-//                     fetch(url,{
-//                         method: "GET",
-//                         contentType:'application/json',
-//                         success: function(data) {
-//                         result = data
-//                         }
-//                     })
-//             var beforeitemcategory = document.getElementById('beforeItemCategory');
-//             var beforeItemName = document.getElementById('beforeItemName');
-//             beforeItemCategory.value = itemcategoryDetails.beforeItemCategory;
-//             beforeItemName.value = itemcategoryDetails.beforeItemName;  
-
-//             }
-
-//         //     main.addEventListener('change',function(){
-//         //     var itemcategory = url[this.value];
-
-//         //     while (sub.option.length  > 0) {
-//         //         sub.option.remove (0);
-//         //     }
-//         //     Arrayfrom(selected_option).forEach(function(el){
-//         //     let option = new Option (el, el);
-//         //     sub.appendChild(option);
-//         //     });
-//         // })
-//         </script>
-//          <!-- <script type="text/javascript">
-//             function populate(s1,s2){
-//                 var s1 = document.getElementById(s1);
-//                 var s2 = document.getElementById(s2);
-//                 s2.innerHTML = "";
-//                 if(s1.value == "Camera"){
-//                     var optionArray = ["|","aaa|Aaa","bbb|Bbb"];
-//                 }
-//                 for(var option in optionArray){
-//                     var pair = optionArray[option].split("|");
-//                     var newOption = document.createElement("option");
-//                     newOption.value = pair[0];
-//                     newOption.innerHTML = pair[1];
-//                     s2.option.add(newOption);
-//                 }
-//             }
-//         </script>  -->

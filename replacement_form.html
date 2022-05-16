@@ -19,7 +19,7 @@
                 <div class="container-fluid">
                   <div class="navbar-header">
                     <p class="navbar-logo" href="#"></p>
-                      <img src="\\107.105.86.239\mpqa\Itrue Files\Jasmine\updated\Jasmine Files\final logo1.png" width="60%" height="25%">
+                      <img src="\\107.105.86.239\mpqa\Itrue Files\JASMINE\updated\Jasmine Files\final logo1.png" width="60%" height="25%">
                   </p>
                   </div><ul class= "nav nav-pills nav-justified">
                     <li role="presentation" class="active"><a href="#">Item Replacement</a></li>
@@ -30,7 +30,7 @@
                 </div>
               </nav>
         <div style ="background-image: white">
-            <center> 
+            <center>
                     <div class="header">
                         <p5>Input Details</p5>
                     </div>
@@ -60,7 +60,7 @@
                             <div class="form-group">
                               <label for="employee" class="col-sm-4 control-label">Employee Number</label>
                               <div class="col-sm-6">
-                                <input type="text" class="form-control" id="employee" placeholder="Employee No.">
+                                <input type="number" class="form-control" id="employee" placeholder="Employee No.">
                               </div>
                             </div>
                         </div>
@@ -97,7 +97,9 @@
                                         <div class="form-group row">
                                             <label for="beforeItemName" class="col-sm-3 col-form-label">Item Name</label>
                                             <div class="col-sm-6">
-                                                <select id="beforeItemName" type="text" class="form-control" id="beforeItemName"></select>
+                                                <select id="beforeItemName" type="text" class="form-control" id="beforeItemName">
+                                                    <option>---</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -122,6 +124,7 @@
                                             <label for="afterItemName" class="col-sm-3 col-form-label">Item Name</label>
                                             <div class="col-sm-6">
                                                 <select id="afterItemName" type="text" class="form-control" id="afterItemName">
+                                                    <option>---</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -137,7 +140,7 @@
                                             <div style="color: rgb(255, 255, 255);background-color:rgb(3, 82, 156); width: 80%; height: 10%;border: 1px solid rgb(0, 0, 0);">
                                                 <h4>Remarks</h4>
                                             </div>
-                                            <textarea rows=3></textarea>
+                                            <textarea rows=8></textarea>
                                         </div>
                                     </div> 
                                  </div>  
@@ -145,7 +148,7 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div style="font-style:justified; background-color: orange; color:rgb(255, 255, 255); width: 60%; height: 10%; text-align: center ;border: 1px solid rgb(0, 0, 0);">
-                                            <h4>Before Image</h4>
+                                        <h4>Before Image</h4>
                                         </div>
                                         <div style="background-color: gray; font-size: 10pt; width: 35%; height: 3%;color: white;"class="">
                                             <p><input type="file"  accept="image1/*" name="image" id="file1"  onchange="getImageforUpload(event, 'beforeImage')" style="display: none;"></p>
@@ -169,7 +172,7 @@
                                 <div style="background-color: rgb(226, 224, 224)">    
                                 <div class="row">
                                     <div class="header">
-                                        <p5>Detailed reason for Replacement</p5>
+                                        <p5>Detailed Reason for Replacement</p5>
                                      </div><br>
                                         <textarea rows=10 style="height: 60px; width: 900px"></textarea></br>
                                             <input type="reset" class="btn btn-danger"></button>
@@ -179,9 +182,9 @@
                             </div> 
                         </div>     
                     </div> 
-                </form>
+                
             </center>
         </body>
     <script src="js/replacement_form.js"></script>
-   
+   </form>
 </html>

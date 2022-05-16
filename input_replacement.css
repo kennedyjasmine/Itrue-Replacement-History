@@ -10,7 +10,7 @@
     width: 100%;
 }
 .itrueparts{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(3, 82, 156);
     font-size: 13pt;
     row-gap: 4pt;
     column-gap: 2pt;
@@ -120,6 +120,21 @@ padding: 2%
     border-radius: 10px;
     border-spacing: 10px;
     border-color: white; 
+}
+table{
+    border: 2px ;
+    background: rgb(58, 129, 235);
+    color:rgb(255, 255, 255);
+    height: 30%; 
+    width: 200%; 
+    padding: 8px;
+    border-collapse: collapse;
+    row-gap: 8pt;
+    border-style: double;
+    border-radius: 10px;
+    border-spacing: 10px;
+    border-color: white; 
+
 }
   
   
