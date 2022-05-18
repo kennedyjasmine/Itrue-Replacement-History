@@ -27,18 +27,25 @@
                                     </p>
                                 </div>
                                 <ul class= "nav nav-pills nav-justified">
+                                    <form class="navbar-form navbar-right">
+                                        <div class="form-group">
+                                          <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Search</button>
+                                      </form>
                                     <li role="presentation" class="active"><a href="#">Item Replacement</a></li>
                                     <li role="presentation"><a href="#">Replacement History</a></li>
                                     <li role="presentation"><a href="#">Frequency Replacement</a></li>
                                     <li role="presentation" class="dropdown">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                          Current Stocks <span class="caret"></span>
+                                          Stocks <span class="caret"></span>
                                         </a>
                                         <ul class="dropdown-menu">
                                         <li><a href="#">Current Stocks</a></li>
                                         <li><a href="#">Added Stocks</a></li>
+                                        </ul>
                                     </li>
-                                </ul>
+                                </ul> 
                             </div>
                         </nav>
                     </div>
@@ -78,7 +85,8 @@
                                     <input type="text" class="form-control"   id="employee" placeholder="Employee No.">
                                 </div>
                                 </div>
-                            </div><form>
+                            </div>
+                            
                             <div class="form-group">
                                 <div class="col-sm-6">
                                     <label for="size" class="col-sm-1 control-label">Size</label>
@@ -89,6 +97,7 @@
                             </div>
                         </div>
                     </span>
+                    <form>
                     <div style="border:solid 1px black "> 
                         <div class="itrueparts">
                            <p5>ITrue Parts</p5> 
@@ -98,8 +107,10 @@
                                 <div container-fluid>
                                     <div class="row justify-content-center">
                                         <div class="col-md-4">
-                                            <div style="border: collapse 1px; ;color: rgb(255, 255, 255);background-color:orange; width: 45%; height: 10%;border: 1px solid rgb(0, 0, 0);">
-                                                <h4>Item Before</h4>
+                                            <div class="pad">
+                                                <div style="border: collapse 1px; ;color: rgb(255, 255, 255);background-color:orange; width: 45%; height: 10%;border: 1px solid rgb(0, 0, 0);">
+                                                    <h4>Item Before</h4>
+                                                </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label for="beforeItemCategory" class="col-sm-3 col-form-label">Item Category</label>
@@ -124,8 +135,10 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div style="color: rgb(255, 255, 255);background-color: rgb(115, 218, 106); width: 45%; height: 10%;border: 1px solid black; background-position: 20%;">
-                                                <h4>Item After</h4>
+                                            <div class="pad">
+                                                <div style="color: rgb(255, 255, 255);background-color: rgb(115, 218, 106); width: 45%; height: 10%;border: 1px solid black; background-position: 20%;">
+                                                    <h4>Item After</h4>
+                                                </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label for="afterItemCategory" class="col-sm-3 col-form-label">Item Category</label>
@@ -153,7 +166,8 @@
                                                 <div style="color: rgb(255, 255, 255);background-color:rgb(3, 82, 156); width: 70%; height: 10%;border: 1px solid rgb(0, 0, 0);">
                                                     <h4>Remarks</h4>
                                                 </div>
-                                                <textarea rows=8 style="height: 150px; width: 190px"></textarea>
+                                                <div style="padding: 4px">
+                                                <textarea rows=8 style="height: 150px; width: 195px"></textarea></div>
                                             </div>
                                         </div> 
                                     </div>  
