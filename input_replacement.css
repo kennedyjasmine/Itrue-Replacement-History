@@ -1,13 +1,14 @@
 .header{
     background-color:rgb(3, 82, 156);
     color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
     padding: 1px;
     font-size: 13pt;
     text-align: center;
     border-collapse: border;
     height: 18%;
     width: 100%;
+    font-family:'font-family: Verdana, Geneva, Tahoma, sans-serif';
 }
 .itrueparts{
     background-color: rgb(3, 82, 156);
@@ -121,6 +122,21 @@ padding: 2%
     border-spacing: 10px;
     border-color: white; 
 }
+.history{
+    background-color:rgb(4, 114, 218);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 13pt;
+    height: 16%;
+    width: 100%;
+    font-size:Larger;
+    color: white;
+    text-align: center;
+    font-family: 'Verdana, Geneva, Tahoma', sans-serif;
+}
+.font{
+    font-family:'Verdana, Geneva, Tahoma, sans-serif'; font-size: 12pt;
+}
 table{
     border: 2px ;
     background: rgb(58, 129, 235);
@@ -134,10 +150,70 @@ table{
     border-radius: 10px;
     border-spacing: 10px;
     border-color: white; 
+}
+
+th {
+    border: 1px solid rgb(184, 182, 182);
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+
+th[scope="col"] {
+    background-color: #9b9999;
+    color: #fff;
+}
+
+th[scope="row"] {
+    background-color: #d7d9f2;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-family:'Helvetica', serif ;
+    font-size: 9pt;
+    background-color: rgb(201, 200, 200);
+        color: rgb(0, 0, 0);
+}
+
+
+.coll {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 4px double #ff00ff;
+}
+
+span.b {
+    display: inline-block;
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    border: 2px solid rgb(184, 214, 245);        
+    background-color: rgb(226, 224, 224); 
+}
+
+span.a {
+    display: inline-block;
+    width: 100%;
+    height: 48px;
+    padding: 2px;
+    border: 2px solid rgb(184, 214, 245);    
+    background-color: rgb(255, 255, 255);
 
 }
-  
-  
+.pad {
+    padding: 2px
+
+}
+
 
  
   

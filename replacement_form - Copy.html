@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <!-- test -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="input_replacement.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+        <title>
+            ITRUE MAINTENANCE HISTORY
+        </title>
+        <body>
+            <nav class="nav-tabs nav-justified">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <p class="navbar-logo" href="#"></p>
+                        <img src="\\107.105.86.239\mpqa\Itrue Files\JASMINE\updated\Jasmine Files\final logo1.png" width="60%" height="25%">
+                        </p>
+                    </div>
+                  <ul class= "nav nav-pills nav-justified">
+                    <li role="presentation" class="active"><a href="#">Item Replacement</a></li>
+                    <li role="presentation"><a href="#">Replacement History</a></li>
+                    <li role="presentation"><a href="#">Current Stocks</a></li>
+                    <li role="presentation"><a href="#">Frequency Replacement</a></li>
+                  </ul>
+                </div>
+            </nav>
+            <div style ="background-image: white">
+            <center>
+                    <div class="header">
+                        <p5>Input Details</p5>
+                    </div>
+                    <div style="background-color: rgb(226, 224, 224)">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                              <label for="machineno" class="col-sm-4 control-label">Machine Number</label>
+                              <div class="col-sm-6">
+                                <input type="text" class="form-control" id="machineno" placeholder="Machine No.">
+                              </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <div class="col-sm-6"> 
+                              <label for="line" class="col-sm-1 control-label">Line</label>
+                              <div class="col-sm-6">
+                                <input type="text" class="form-control" id="line" placeholder="line" disabled >
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                              <label for="employee" class="col-sm-4 control-label">Employee Number</label>
+                              <div class="col-sm-6">
+                                <input type="number" class="form-control" id="employee" placeholder="Employee No.">
+                              </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                              <label for="size" class="col-sm-1 control-label">Size</label>
+                              <div class="col-sm-6">
+                                <input type="text" class="form-control" id="size" placeholder="size" disabled >
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    </div>
+                    <div style="border:solid 1px black "> 
+                        <div class="itrueparts">
+                           <p5>ITrue Parts</p5> 
+                        </div>
+                     
+                        <div style="background-color: rgb(226, 224, 224)">
+                            <div container-fluid>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-4">
+                                        <div style="border: collapse 1px; ;color: rgb(255, 255, 255);background-color:orange; width: 45%; height: 10%;border: 1px solid rgb(0, 0, 0);">
+                                            <h4>Item Before</h4>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="beforeItemCategory" class="col-sm-3 col-form-label">Item Category</label>
+                                            <div class="col-md-6">
+                                                <select name="text" class="form-control" id="beforeItemCategory">
+                                                </select>
+                                            </div>
+                                        </div>    
+                                        <div class="form-group row">
+                                            <label for="beforeItemName" class="col-sm-3 col-form-label">Item Name</label>
+                                            <div class="col-sm-6">
+                                                <select id="beforeItemName" type="text" class="form-control" id="beforeItemName">
+                                                    <option>---</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="beforeItemCount" class="col-sm-3 col-form-label">Item Count</label>
+                                            <div class="col-sm-6">
+                                                <input name="text"  id="beforeItemCount" class="form-control" id="beforeItemCount">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div style="color: rgb(255, 255, 255);background-color: rgb(115, 218, 106); width: 45%; height: 10%;border: 1px solid black; background-position: 20%;">
+                                            <h4>Item After</h4>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="afterItemCategory" class="col-sm-3 col-form-label">Item Category</label>
+                                            <div class="col-sm-6">
+                                                <select type="afterItemCategory" class="form-control" id="afterItemCategory">
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="afterItemName" class="col-sm-3 col-form-label">Item Name</label>
+                                            <div class="col-sm-6">
+                                                <select id="afterItemName" type="text" class="form-control" id="afterItemName">
+                                                    <option>---</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="afterItemCount" class="col-sm-3 col-form-label">Item Count</label>
+                                            <div class="col-sm-6">
+                                                <input type="text"  id="afterItemCount" class="form-control" id="afterItemCount">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="col-sm-8">
+                                            <div style="color: rgb(255, 255, 255);background-color:rgb(3, 82, 156); width: 80%; height: 10%;border: 1px solid rgb(0, 0, 0);">
+                                                <h4>Remarks</h4>
+                                            </div>
+                                            <textarea rows=3></textarea>
+                                        </div>
+                                    </div> 
+                                 </div>  
+                            </div>
+                        </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div style="font-style:justified; background-color: orange; color:rgb(255, 255, 255); width: 60%; height: 10%; text-align: center ;border: 1px solid rgb(0, 0, 0);">
+                                        <h4>Before Image</h4>
+                                        </div>
+                                        <div style="background-color: gray; font-size: 10pt; width: 35%; height: 3%;color: white;"class="">
+                                            <p><input type="file"  accept="image1/*" name="image" id="file1"  onchange="getImageforUpload(event, 'beforeImage')" style="display: none;"></p>
+                                            <p><label for="file1" style="cursor: pointer;">Upload Image</label></p>
+                                        </div>
+                                            <p><img id="beforeImage" width="150" class=""/></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div style="font-size: 10pt;  background-color: rgb(115, 218, 106); color:rgb(255, 255, 255); width: 60%; height: 10%; text-align: center ;border: 1px solid rgb(0, 0, 0)">
+                                            <h4>After Image</h4>
+                                        </div> 
+                                        <div style="background-color: grey; font-size: 10pt; width: 35%; height: 3%;color: white;">
+                                            <p><input type="file"  accept="image/*" name="image" id="file2"  onchange="getImageforUpload(event, 'afterImage')" style="display: none;"></p>
+                                            <p><label for="file2" style="cursor: pointer;">Upload Image</label></p>
+                                        </div>
+                                            <p><img id="afterImage" width="150" /></p>
+                                    </div>
+                                </div> 
+                     
+                            </div>
+                                <div style="background-color: rgb(226, 224, 224)">    
+                                <div class="row">
+                                    <div class="header">
+                                        <p5>Detailed reason for Replacement</p5>
+                                     </div><br>
+                                        <textarea rows=10 style="height: 60px; width: 900px"></textarea></br>
+                                            <input type="reset" class="btn btn-danger"></button>
+                                            <input type="submit" class="btn btn-success"></button>
+                                </div><br></div>
+                             </div> 
+                            </div> 
+                        </div>     
+                    </div> 
+            </center>
+        </body>
+    <script src="js/replacement_form.js"></script>
+   </form>
+</html>

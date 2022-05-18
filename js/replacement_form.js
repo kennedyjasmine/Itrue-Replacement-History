@@ -7,8 +7,6 @@ function removeOptions(selectElement) {
        selectElement.remove(i);
     }
  }
- //
-
 
 getItemCategories()
 
@@ -17,6 +15,7 @@ var machineNumberObject = document.getElementById('machineno')
    if (event.key === 'Enter') {
        var machineNumber = machineNumberObject.value;
        getEquipmentDetails(machineNumber)
+       console.log('Enter');
    }
 })
 
@@ -134,3 +133,11 @@ beforeItemCategory.addEventListener("change", function(){
 afterItemCategory.addEventListener("change", function(){
     getItemsfromCategory(afterItemCategory.value, afterItemCategory.id)
 })
+
+
+// document.getElementById("reset").addEventListener("click", function() 
+// {
+
+
+
+// });
