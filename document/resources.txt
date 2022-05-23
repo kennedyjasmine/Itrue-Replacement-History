@@ -1,0 +1,13 @@
+resource                                            HTTP verb / method          Scope                               Semantics
+http://{URL}/api/equipment                              GET                         Collection of equipment         Retrieve all equipment
+                                                        POST                        Collection of equipment         Create new equipment instance
+http://{URL}/api/equipment/{equipment}                  PATCH                         equipment                     update an existing equipment
+                                                        DELETE                        equipment                     deletes an equipment
+http://{URL}/api/items                                  GET
+                                                        POST
+http://{URL}/api/items/{item}                           PATCH
+                                                        DELETE
+http://{URL}/api/item-categories                        GET
+                                                        POST
+http://{URL}/api/item-categories/{item-category}        PATCH
+                                                        DELETE
